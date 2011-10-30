@@ -1,0 +1,33 @@
+Trapezoidal Map Visualization
+Jarrell Waggoner
+
+This project was completed with the latest version of Java, and will run on any machine and any platform with an up-to-date JDK. Extensive use was made of the Java collection library for efficiency.
+
+To run:
+-Place the .class files in any directory together
+-Navigate to this directory from the command-line
+-Execute "java TrapezoidalMapDriver" using the latest JDK
+
+To (re)compile:
+-Place the .java files in any directory together
+-Navigate to this directory from the command-line
+-Run "make" on *nix machines or use cygwin make to compile on Windows.
+
+Clicking the left mouse button will add the first point of a line segment. A second click will add the second point of a line segment. No check is made to determine if the line segments created cross each other, so the results will be unreliable if there are intersecting lines.
+
+The trapezoidal map will be displayed using blue lines when the "Incremental" button is clicked. Given the derth of good graph visualization tools for Java that will interoperate with the unique data structures used here, the search tree output is given on the command line in preorder, inorder, and postfix order. The nodes are labeled P (for points), S (for segments), and T (for trapezoid), with indices and/or coordinates for each structure following the letter.
+
+Clicking the right or middle mouse button will position a search point in the plane (blue). If a search point has been placed, clicking the "Incremental" button will not only create a trapezoidal map (and accompanying search structure), but will run a point query on the given search point. The output of the query will appear after the tree output on the command-line and consists of the nodes visited and the number of steps needed to locate the point (which will very, as the algorithm is random).
+
+The "Clear" button will clear trapezoidal and query calculations, leaving the segments intact. The "Clear All" button will clear all data structures, including the segments.
+
+Statistics:
+-Original Code: 100%
+-Lines: >1500
+-Project hours: 94
+
+Data Structures:
+-TrapezoidFace (T from the book)
+-Graph (D from the book)
+-TrapezoidLine
+-etc.
