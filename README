@@ -24,7 +24,7 @@ The "Clear" button will clear trapezoidal and query calculations, leaving the se
 Statistics:
 -Original Code: 100%
 -Lines: >1500
--Project hours: 94
+-Project hours: 9
 
 Data Structures:
 -TrapezoidFace (T from the book)
